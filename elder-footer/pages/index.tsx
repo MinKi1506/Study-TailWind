@@ -9,7 +9,7 @@ import styles from "../styles/Home.module.css";
 //https://www.youtube.com/watch?v=5xDVP02g9WQ 폰트 변경 참고
 //https://dev.to/manuelalferez/custom-fonts-in-nextjs-tailwindcss-2iip 폰트 변경 참고
 //https://kimdabin.tistory.com/entry/Font-format%EA%B3%BC-font-face-%EC%84%A0%EC%96%B8-%EB%B0%8F-%EC%A0%81%EC%9A%A9%EB%B2%95 globals.css에 custom font추가 하는 법 참고
-
+//https://chaeyoung2.tistory.com/66 Next js의  Image컴포넌트 활용법 참고
 const Home: NextPage = () => {
   return (
     <div>
@@ -21,7 +21,14 @@ const Home: NextPage = () => {
           <div className="w-[400px]">
             <div>
               <div className="mb-2">
-                <img src="/img/symbol.svg" alt="symbol" />
+                <Image
+                  src="/img/symbol.svg"
+                  alt="symbol"
+                  layout="fixed"
+                  width={22}
+                  height={22}
+                />
+                {/* <img src="/img/symbol.svg" alt="symbol" /> */}
               </div>
               <div>
                 The world’s first and largest digital marketplace for crypto
@@ -33,8 +40,23 @@ const Home: NextPage = () => {
           </div>
           <div className="flex flex-col self-center">
             <div className="flex flex justify-end p-1.5 mb-6">
-              <img src="/img/twitter.svg" alt="twitter" className="mr-[8px]" />
-              <img src="/img/instagram.svg" alt="instagram" />
+              <Image
+                className="mr-[8px]"
+                src="/img/twitter.svg"
+                alt="twitter"
+                layout="fixed"
+                width={24}
+                height={24}
+              />
+              <Image
+                src="/img/instagram.svg"
+                alt="instagram"
+                layout="fixed"
+                width={24}
+                height={24}
+              />
+              {/* <img src="/img/twitter.svg" alt="twitter" className="mr-[8px]" /> */}
+              {/* <img src="/img/instagram.svg" alt="instagram" /> */}
             </div>
             <div className="flex flex-row">
               <h5 className="mr-4 opacity-30">Privacy Policy</h5>
