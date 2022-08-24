@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -24,7 +28,12 @@ a {
     background: black;
   }
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer base {
+  @font-face {
+    font-family: "inter";
+    font-weight: 200;
+    src: url("/sta  tic/fonts/inter-Black.otf") format("truetype");
+    font-weight: 400px;
+    font-style: normal;
+  }
+}
