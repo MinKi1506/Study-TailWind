@@ -28,12 +28,9 @@ a {
     background: black;
   }
 }
-@layer base {
-  @font-face {
-    font-family: "inter";
-    font-weight: 200;
-    src: url("/sta  tic/fonts/inter-Black.otf") format("truetype");
-    font-weight: 400px;
-    font-style: normal;
-  }
+@font-face {
+  font-family: "inter";
+  src: local("inter"), url("/sta  tic/fonts/inter-Black.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
 }

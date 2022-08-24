@@ -4,10 +4,11 @@ export default function Document() {
   return (
     <Html>
       <Head />
-      <body className="font-inter">
+      <body>
         <Main />
         <NextScript />
       </body>
+      <footer className="font-inter"></footer>
     </Html>
   );
 }

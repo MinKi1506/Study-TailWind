@@ -7,6 +7,8 @@ import styles from "../styles/Home.module.css";
 //https://geonlee.tistory.com/235 참고
 //https://velog.io/@zero_mountain/NextNext.js%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0 로컬 이미지 삽입 참고
 //https://www.youtube.com/watch?v=5xDVP02g9WQ 폰트 변경 참고
+//https://dev.to/manuelalferez/custom-fonts-in-nextjs-tailwindcss-2iip 폰트 변경 참고
+//https://kimdabin.tistory.com/entry/Font-format%EA%B3%BC-font-face-%EC%84%A0%EC%96%B8-%EB%B0%8F-%EC%A0%81%EC%9A%A9%EB%B2%95 globals.css에 custom font추가 하는 법 참고
 
 const Home: NextPage = () => {
   return (
@@ -16,7 +18,7 @@ const Home: NextPage = () => {
       </div>
       <footer className="flex w-[1300px] text-[12px] place-content-center border border-white-500 leading-[14.52px] opacity-70 font-inter">
         <div className="flex w-[1200px] justify-between my-[50px]">
-          <div className="w-[423px]">
+          <div className="w-[400px]">
             <div>
               <div className="mb-2">
                 <img src="/img/symbol.svg" alt="symbol" />
@@ -31,7 +33,7 @@ const Home: NextPage = () => {
           </div>
           <div className="flex flex-col self-center">
             <div className="flex flex justify-end p-1.5 mb-6">
-              <img src="/img/twitter.svg" alt="twitter" className="mr-[17px]" />
+              <img src="/img/twitter.svg" alt="twitter" className="mr-[8px]" />
               <img src="/img/instagram.svg" alt="instagram" />
             </div>
             <div className="flex flex-row">
